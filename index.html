@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game life</title>
+    <script src="index.js"></script>
+</head>
+<body>
+<canvas id="game" width="1000" height="500"></canvas>
+<button onclick="start()">start</button>
+<button onclick="pause()">pause</button>
+<script>
+    let game = new GameLife(document.getElementById("game"), 100, 50);
+    game.run();
+
+    function start() {
+        console.log('start');
+        game.start();
+    }
+    function pause() {
+        console.log('pause');
+        game.pause();
+    }
+</script>
+</body>
+</html>
